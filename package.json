@@ -1,0 +1,39 @@
+{
+  "name": "@disco/mongodb",
+  "version": "1.0.0",
+  "description": "MongoDB driver for disco",
+  "author": "Stephen Belanger <admin@stephenbelanger.com> (http://stephenbelanger.com/)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "precoverage": "npm run test",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "nyc tap test.js"
+  },
+  "keywords": [
+    "corm",
+    "model",
+    "mongodb"
+  ],
+  "homepage": "https://github.com/discorm/mongodb#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discorm/mongodb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/discorm/mongodb/issues"
+  },
+  "devDependencies": {
+    "@disco/disco": "^1.0.0",
+    "codecov": "^3.6.1",
+    "nyc": "^15.0.0",
+    "standard": "^14.3.1",
+    "tap": "^14.10.5"
+  },
+  "dependencies": {
+    "@disco/base-driver": "^1.0.0",
+    "mongodb": "^3.4.1"
+  }
+}
