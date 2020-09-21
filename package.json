@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "precoverage": "npm run test",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "coverage": "nyc report --reporter=lcov",
     "lint": "standard",
     "pretest": "npm run lint",
     "test": "nyc tap test.js"
@@ -27,7 +27,6 @@
   },
   "devDependencies": {
     "@disco/disco": "^1.0.0",
-    "codecov": "^3.6.1",
     "nyc": "^15.0.0",
     "standard": "^14.3.1",
     "tap": "^14.10.5"
